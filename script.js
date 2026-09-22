@@ -3,7 +3,7 @@ const appFrame = document.getElementById("appFrame");
 
 const apps = [
   {
-    name: "Calculate Sheet",
+    name: "Calculation Sheet",
     url: "https://bmixab2020.github.io/LearnIAProjects/"
   },
   {
