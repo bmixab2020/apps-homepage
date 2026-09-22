@@ -4,6 +4,11 @@
   padding: 0;
 }
 
+html,
+body {
+  height: 100%;
+}
+
 body {
   font-family: system-ui, sans-serif;
   background: #f0f2f5;
@@ -67,5 +72,4 @@ body {
   border-radius: 10px;
   background: #fff;
   box-shadow: 0 4px 16px rgba(0, 0, 0, 0.08);
-  min-height: 70vh;
 }
