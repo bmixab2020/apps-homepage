@@ -45,37 +45,17 @@ body {
   cursor: pointer;
   margin-bottom: -2px;
   transition: background 0.15s, color 0.15s;
-}
-
-.tab[data-index="0"] {
-  background: #eff6ff;
-  color: #2563eb;
-}
-
-.tab[data-index="0"]:hover {
-  background: #dbeafe;
-}
-
-.tab[data-index="0"].active {
-  background: #2563eb;
-  color: #fff;
-}
-
-.tab[data-index="1"] {
-  background: #ecfdf5;
-  color: #047857;
-}
-
-.tab[data-index="1"]:hover {
-  background: #d1fae5;
-}
-
-.tab[data-index="1"].active {
   background: #059669;
   color: #fff;
 }
 
+.tab:hover {
+  background: #d1fae5;
+}
+
 .tab.active {
+  background: #055609;
+  color: #fff;
   font-weight: 600;
 }
 
