@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Apps</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="page-header">
+    <h1>My Apps</h1>
+    <nav class="tabs" id="tabs" role="tablist">
+      <button class="tab active" role="tab" aria-selected="true" data-index="0">Calculate Sheet</button>
+      <button class="tab" role="tab" aria-selected="false" data-index="1">Crypto.com Calculation</button>
+    </nav>
+  </header>
+
+  <main class="app-frame-wrap">
+    <iframe
+      id="appFrame"
+      class="app-frame"
+      src="https://bmixab2020.github.io/LearnIAProjects/"
+      title="Calculate Sheet"
+      loading="eager"
+    ></iframe>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
