@@ -38,24 +38,44 @@ body {
 }
 
 .tab {
-  background: transparent;
   border: none;
-  border-bottom: 3px solid transparent;
+  border-radius: 8px 8px 0 0;
   padding: 0.7rem 1.4rem;
   font-size: 0.95rem;
-  color: #6b7280;
   cursor: pointer;
   margin-bottom: -2px;
-  transition: color 0.15s, border-color 0.15s;
+  transition: background 0.15s, color 0.15s;
 }
 
-.tab:hover {
+.tab[data-index="0"] {
+  background: #eff6ff;
   color: #2563eb;
+}
+
+.tab[data-index="0"]:hover {
+  background: #dbeafe;
+}
+
+.tab[data-index="0"].active {
+  background: #2563eb;
+  color: #fff;
+}
+
+.tab[data-index="1"] {
+  background: #ecfdf5;
+  color: #047857;
+}
+
+.tab[data-index="1"]:hover {
+  background: #d1fae5;
+}
+
+.tab[data-index="1"].active {
+  background: #059669;
+  color: #fff;
 }
 
 .tab.active {
-  color: #2563eb;
-  border-bottom-color: #2563eb;
   font-weight: 600;
 }
 
