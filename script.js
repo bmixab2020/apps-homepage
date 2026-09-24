@@ -7,6 +7,10 @@ const apps = [
     url: "https://bmixab2020.github.io/LearnIAProjects/"
   },
   {
+    name: "Credit Card Tracking",
+    url: "https://bmixab2020.github.io/creditCard-app/"
+  },
+  {
     name: "Crypto.com Calculation",
     url: "https://bmixab2020.github.io/CryptoApp/"
   }
