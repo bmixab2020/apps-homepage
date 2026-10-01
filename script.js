@@ -11,6 +11,10 @@ const apps = [
     url: "https://bmixab2020.github.io/creditCard-app/"
   },
   {
+    name: "Mortgage Calculator",
+    url: "https://bmixab2020.github.io/calculate-interest/"
+  },
+  {
     name: "Crypto.com Calculation",
     url: "https://bmixab2020.github.io/CryptoApp/"
   }
