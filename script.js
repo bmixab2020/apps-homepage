@@ -38,3 +38,10 @@ function activateTab(index) {
 tabs.forEach((tab, index) => {
   tab.addEventListener("click", () => activateTab(index));
 });
+
+// Guard against the tab bar and the apps array drifting out of sync
+if (tabs.length !== apps.length) {
+  console.error(
+    "Tab/app count mismatch: " + tabs.length + " tabs vs " + apps.length + " apps"
+  );
+}
