@@ -4,7 +4,7 @@ const appFrame = document.getElementById("appFrame");
 const apps = [
   {
     name: "Calculation Sheet",
-    url: "https://bmixab2020.github.io/LearnIAProjects/"
+    url: "https://bmixab2020.github.io/calculator-app/"
   },
   {
     name: "Credit Card Tracking",
