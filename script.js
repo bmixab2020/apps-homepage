@@ -12,7 +12,7 @@ const apps = [
   },
   {
     name: "Mortgage Calculator",
-    url: "https://bmixab2020.github.io/calculate-interest/"
+    url: "https://bmixab2020.github.io/calculate-interest/?v=4"
   },
   {
     name: "Crypto.com Calculation",
