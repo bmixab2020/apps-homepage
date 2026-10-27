@@ -15,6 +15,10 @@ const apps = [
     url: "https://bmixab2020.github.io/calculate-interest/?v=5"
   },
   {
+    name: "Compound Interest",
+    url: "https://bmixab2020.github.io/CalculateCompoundInterest-app/"
+  },
+  {
     name: "Crypto.com Calculation",
     url: "https://bmixab2020.github.io/CryptoApp/"
   }
