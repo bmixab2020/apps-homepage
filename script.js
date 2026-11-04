@@ -1,5 +1,5 @@
 const tabs = Array.from(document.querySelectorAll(".tab"));
-const appFrame = document.getElementById("appFrame");
+const wrap = document.getElementById("appFrameWrap");
 
 const apps = [
   {
@@ -28,6 +28,21 @@ const apps = [
   }
 ];
 
+const frames = {};
+
+function getFrame(index) {
+  if (frames[index]) return frames[index];
+  const iframe = document.createElement("iframe");
+  iframe.className = "app-frame";
+  iframe.src = apps[index].url;
+  iframe.title = apps[index].name;
+  iframe.loading = "eager";
+  iframe.style.display = "none";
+  wrap.appendChild(iframe);
+  frames[index] = iframe;
+  return iframe;
+}
+
 function activateTab(index) {
   tabs.forEach((tab, i) => {
     const isActive = i === index;
@@ -35,10 +50,15 @@ function activateTab(index) {
     tab.setAttribute("aria-selected", String(isActive));
   });
 
+  Object.keys(frames).forEach(k => {
+    frames[k].style.display = (Number(k) === index) ? "block" : "none";
+  });
+
+  const frame = getFrame(index);
+  frame.style.display = "block";
+
   const app = apps[index];
   if (app) {
-    appFrame.src = app.url;
-    appFrame.title = app.name;
     document.title = app.name + " | Useful Apps";
   }
 }
@@ -53,3 +73,6 @@ if (tabs.length !== apps.length) {
     "Tab/app count mismatch: " + tabs.length + " tabs vs " + apps.length + " apps"
   );
 }
+
+// Load first tab without refresh-on-switch
+activateTab(0);
