@@ -39,7 +39,7 @@ function activateTab(index) {
   if (app) {
     appFrame.src = app.url;
     appFrame.title = app.name;
-    document.title = app.name + " | My Apps";
+    document.title = app.name + " | Useful Apps";
   }
 }
 
