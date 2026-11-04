@@ -21,6 +21,10 @@ const apps = [
   {
     name: "Crypto.com Calculation",
     url: "https://bmixab2020.github.io/CryptoApp/"
+  },
+  {
+    name: "Calculate APTC",
+    url: "https://bmixab2020.github.io/aptc-calculator/"
   }
 ];
 
