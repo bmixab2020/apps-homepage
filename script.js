@@ -25,6 +25,10 @@ const apps = [
   {
     name: "Calculate APTC",
     url: "https://bmixab2020.github.io/aptc-calculator/"
+  },
+  {
+    name: "Stock Tracking",
+    url: "https://bmixab2020.github.io/stock-tracking/"
   }
 ];
 
