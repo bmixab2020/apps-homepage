@@ -63,7 +63,7 @@ function activateTab(index) {
 
   const app = apps[index];
   if (app) {
-    document.title = app.name + " | Useful Apps";
+    document.title = "Useful Apps";
   }
 }
 
