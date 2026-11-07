@@ -3,6 +3,10 @@ const wrap = document.getElementById("appFrameWrap");
 
 const apps = [
   {
+    name: "Stock Tracking",
+    url: "https://bmixab2020.github.io/stock-tracking/"
+  },
+  {
     name: "Calculation Sheet",
     url: "https://bmixab2020.github.io/calculator-app/?v=2"
   },
@@ -25,10 +29,6 @@ const apps = [
   {
     name: "Calculate APTC",
     url: "https://bmixab2020.github.io/aptc-calculator/"
-  },
-  {
-    name: "Stock Tracking",
-    url: "https://bmixab2020.github.io/stock-tracking/"
   }
 ];
 
